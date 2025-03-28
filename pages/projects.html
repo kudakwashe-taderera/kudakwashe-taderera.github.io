@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore projects by Kudakwashe Taderera - Web applications, AI, and mobile development">
+  <meta name="keywords" content="Kudakwashe Taderera, projects, web development, AI, mobile apps">
+  <meta name="author" content="Kudakwashe Taderera">
+  
+  <title>Projects | Kudakwashe Taderera</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="../" class="navbar-logo">Kudakwashe <span>Taderera</span></a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="navbar-nav">
+        <li><a href="../" class="nav-link">Home</a></li>
+        <li><a href="./about.html" class="nav-link">About</a></li>
+        <li><a href="./projects.html" class="nav-link">Projects</a></li>
+        <li><a href="./resume.html" class="nav-link">Resume</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Header -->
+  <section class="projects-header" style="padding: 5rem 0 3rem;">
+    <div class="container">
+      <div class="fade-in">
+        <h1 class="gradient-heading text-center">My Projects</h1>
+        <div class="section-divider" style="margin: 1.5rem auto;"></div>
+        <p class="text-center accent-border-left" style="max-width: 750px; margin: 0 auto; padding-left: 1rem; border-left: 4px solid var(--uiuc-orange);">
+          A collection of projects showcasing my experience in web development, AI integration, database management, and application security.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section class="projects-section" style="padding: 3rem 0 5rem;">
+    <div class="container">
+      <!-- Tabs Navigation -->
+      <div class="tabs fade-in delay-200">
+        <div class="tabs-list">
+          <button class="tab-trigger active" data-tab="all-projects">All Projects</button>
+          <button class="tab-trigger" data-tab="web-projects">Web Applications</button>
+          <button class="tab-trigger" data-tab="ai-projects">AI & Data</button>
+          <button class="tab-trigger" data-tab="mobile-projects">Mobile</button>
+        </div>
+        
+        <!-- All Projects Tab -->
+        <div id="all-projects" class="tab-content active">
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card fade-in delay-300">
+              <div class="project-image">
+                <img src="../assets/career-guidance-system.svg" alt="Career Guidance System">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Career Guidance System</h3>
+                <p class="project-subtitle">AI-powered career exploration platform</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  An AI-powered platform designed to assist students and professionals in choosing the right career path based on education, interests, and job market trends.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item slide-in-left delay-200">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Personalized career & university program recommendations</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-300">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>AI-driven career matching & industry insights</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-400">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time job market demand trends & salary projections</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge fade-in delay-200">React.js</span>
+                    <span class="tech-badge fade-in delay-300">Node.js</span>
+                    <span class="tech-badge fade-in delay-300">TensorFlow</span>
+                    <span class="tech-badge fade-in delay-400">MongoDB</span>
+                    <span class="tech-badge fade-in delay-400">Express</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card fade-in delay-400">
+              <div class="project-image">
+                <img src="../assets/smart-home-automation.svg" alt="Smart Home Automation">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Smart Home Automation</h3>
+                <p class="project-subtitle">IoT-based home control system</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A comprehensive IoT solution that enables users to monitor and control various aspects of their home environment through an intuitive mobile and web interface.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item slide-in-left delay-200">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time monitoring and control of home devices</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-300">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Energy usage analytics and optimization</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-400">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Voice command integration with AI assistants</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge fade-in delay-200">React Native</span>
+                    <span class="tech-badge fade-in delay-300">Python</span>
+                    <span class="tech-badge fade-in delay-300">MQTT</span>
+                    <span class="tech-badge fade-in delay-400">Raspberry Pi</span>
+                    <span class="tech-badge fade-in delay-400">Firebase</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card fade-in delay-500">
+              <div class="project-image">
+                <img src="../assets/blockchain-supply-chain.svg" alt="Blockchain Supply Chain">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Blockchain Supply Chain</h3>
+                <p class="project-subtitle">Decentralized tracking system</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A blockchain-based supply chain management system that provides transparency, traceability, and security for product movements from manufacturer to consumer.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item slide-in-left delay-200">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>End-to-end product tracking with QR code integration</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-300">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Smart contracts for automated compliance verification</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-400">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time analytics dashboard for supply chain insights</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge fade-in delay-200">Ethereum</span>
+                    <span class="tech-badge fade-in delay-300">Solidity</span>
+                    <span class="tech-badge fade-in delay-300">Web3.js</span>
+                    <span class="tech-badge fade-in delay-400">React</span>
+                    <span class="tech-badge fade-in delay-400">Node.js</span>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="project-section-title">
+                    <i class="fas fa-images"></i> Project Screenshots
+                  </h4>
+                  <div class="image-gallery">
+                    <div class="gallery-item fade-in delay-200">
+                      <img src="../assets/blockchain-dashboard.svg" alt="Blockchain Dashboard" />
+                      <div class="gallery-caption">Supply Chain Dashboard</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-300">
+                      <img src="../assets/blockchain-tracking.svg" alt="Product Tracking" />
+                      <div class="gallery-caption">Product Tracking Interface</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-400">
+                      <img src="../assets/blockchain-analytics.svg" alt="Analytics Dashboard" />
+                      <div class="gallery-caption">Analytics Dashboard</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-500">
+                      <img src="../assets/blockchain-mobile.svg" alt="Mobile QR Scanner" />
+                      <div class="gallery-caption">Mobile QR Scanner</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card fade-in delay-300">
+              <div class="project-image">
+                <img src="../assets/career-guidance-system.svg" alt="E-Learning Platform">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">E-Learning Platform</h3>
+                <p class="project-subtitle">Interactive online course system</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A comprehensive e-learning platform with interactive courses, progress tracking, and personalized learning paths for students and instructors.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item slide-in-left delay-200">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Interactive video lessons with real-time quizzes</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-300">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Student progress tracking and analytics dashboard</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-400">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Instructor tools for course creation and management</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge fade-in delay-200">Vue.js</span>
+                    <span class="tech-badge fade-in delay-300">Django</span>
+                    <span class="tech-badge fade-in delay-300">PostgreSQL</span>
+                    <span class="tech-badge fade-in delay-400">Redis</span>
+                    <span class="tech-badge fade-in delay-400">AWS S3</span>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 class="project-section-title">
+                    <i class="fas fa-images"></i> Project Screenshots
+                  </h4>
+                  <div class="image-gallery">
+                    <div class="gallery-item fade-in delay-200">
+                      <img src="../assets/career-guidance-system.svg" alt="Course Dashboard" />
+                      <div class="gallery-caption">Course Dashboard</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-300">
+                      <img src="../assets/smart-home-automation.svg" alt="Progress Tracking" />
+                      <div class="gallery-caption">Progress Tracking Interface</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-400">
+                      <img src="../assets/blockchain-supply-chain.svg" alt="Course Editor" />
+                      <div class="gallery-caption">Course Creator Interface</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-500">
+                      <img src="../assets/blockchain-analytics.svg" alt="Student Analytics" />
+                      <div class="gallery-caption">Analytics Dashboard</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card fade-in delay-400">
+              <div class="project-image">
+                <img src="../assets/smart-home-automation.svg" alt="Health Monitoring App">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Health Monitoring App</h3>
+                <p class="project-subtitle">Wearable-integrated health tracker</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A mobile application that connects with wearable devices to track health metrics, provide insights, and generate personalized health recommendations.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item slide-in-left delay-200">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time health metrics tracking and visualization</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-300">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>AI-powered health trend analysis and predictions</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-400">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Integration with multiple wearable device brands</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge fade-in delay-200">Flutter</span>
+                    <span class="tech-badge fade-in delay-300">Firebase</span>
+                    <span class="tech-badge fade-in delay-300">TensorFlow Lite</span>
+                    <span class="tech-badge fade-in delay-400">Bluetooth LE</span>
+                    <span class="tech-badge fade-in delay-400">GraphQL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card fade-in delay-500">
+              <div class="project-image">
+                <img src="../assets/blockchain-supply-chain.svg" alt="Expense Tracker">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Expense Tracker</h3>
+                <p class="project-subtitle">Personal finance management tool</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A comprehensive personal finance application that helps users track expenses, set budgets, and gain insights into their spending habits.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item slide-in-left delay-200">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Automated categorization of transactions</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-300">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Interactive spending visualizations and reports</span>
+                    </li>
+                    <li class="highlight-item slide-in-left delay-400">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Budget planning tools with smart alerts</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge fade-in delay-200">React</span>
+                    <span class="tech-badge fade-in delay-300">Express</span>
+                    <span class="tech-badge fade-in delay-300">MongoDB</span>
+                    <span class="tech-badge fade-in delay-400">Chart.js</span>
+                    <span class="tech-badge fade-in delay-400">Plaid API</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Web Projects Tab -->
+        <div id="web-projects" class="tab-content">
+          <div class="projects-grid">
+            <!-- Project 1 (Career Guidance System) - Same content as above but filtered for web -->
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="../assets/career-guidance-system.svg" alt="Career Guidance System">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Career Guidance System</h3>
+                <p class="project-subtitle">AI-powered career exploration platform</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  An AI-powered platform designed to assist students and professionals in choosing the right career path based on education, interests, and job market trends.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Personalized career & university program recommendations</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>AI-driven career matching & industry insights</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time job market demand trends & salary projections</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Express</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 3 (Blockchain Supply Chain) - Same content as above but filtered for web -->
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="../assets/blockchain-supply-chain.svg" alt="Blockchain Supply Chain">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Blockchain Supply Chain</h3>
+                <p class="project-subtitle">Decentralized tracking system</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A blockchain-based supply chain management system that provides transparency, traceability, and security for product movements from manufacturer to consumer.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>End-to-end product tracking with QR code integration</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Smart contracts for automated compliance verification</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time analytics dashboard for supply chain insights</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge">Ethereum</span>
+                    <span class="tech-badge">Solidity</span>
+                    <span class="tech-badge">Web3.js</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 4 (E-Learning Platform) - Same content as above but filtered for web -->
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="../assets/career-guidance-system.svg" alt="E-Learning Platform">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">E-Learning Platform</h3>
+                <p class="project-subtitle">Interactive online course system</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A comprehensive e-learning platform with interactive courses, progress tracking, and personalized learning paths for students and instructors.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Interactive video lessons with real-time quizzes</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Student progress tracking and analytics dashboard</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Instructor tools for course creation and management</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge">Vue.js</span>
+                    <span class="tech-badge">Django</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">Redis</span>
+                    <span class="tech-badge">AWS S3</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- AI Projects Tab -->
+        <div id="ai-projects" class="tab-content">
+          <div class="projects-grid">
+            <!-- Project 1 (Career Guidance System) - Same content but filtered for AI -->
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="../assets/career-guidance-system.svg" alt="Career Guidance System">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Career Guidance System</h3>
+                <p class="project-subtitle">AI-powered career exploration platform</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  An AI-powered platform designed to assist students and professionals in choosing the right career path based on education, interests, and job market trends.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Personalized career & university program recommendations</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>AI-driven career matching & industry insights</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time job market demand trends & salary projections</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge">React.js</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">TensorFlow</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">Express</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mobile Projects Tab -->
+        <div id="mobile-projects" class="tab-content">
+          <div class="projects-grid">
+            <!-- Project 2 (Smart Home Automation) - Same content but filtered for mobile -->
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="../assets/smart-home-automation.svg" alt="Smart Home Automation">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Smart Home Automation</h3>
+                <p class="project-subtitle">IoT-based home control system</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A comprehensive IoT solution that enables users to monitor and control various aspects of their home environment through an intuitive mobile and web interface.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time monitoring and control of home devices</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Energy usage analytics and optimization</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Voice command integration with AI assistants</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge">React Native</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">MQTT</span>
+                    <span class="tech-badge">Raspberry Pi</span>
+                    <span class="tech-badge">Firebase</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+            
+            <!-- Project 5 (Health Monitoring App) - Same content but filtered for mobile -->
+            <div class="project-card fade-in">
+              <div class="project-image">
+                <img src="../assets/smart-home-automation.svg" alt="Health Monitoring App">
+              </div>
+              <div class="project-header">
+                <h3 class="project-title">Health Monitoring App</h3>
+                <p class="project-subtitle">Wearable-integrated health tracker</p>
+              </div>
+              <div class="project-content">
+                <p class="project-description">
+                  A mobile application that connects with wearable devices to track health metrics, provide insights, and generate personalized health recommendations.
+                </p>
+                
+                <div class="project-highlights">
+                  <h4 class="highlights-title">
+                    <i class="fas fa-lightbulb"></i> Key Highlights
+                  </h4>
+                  <ul class="highlights-list">
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Real-time health metrics tracking and visualization</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>AI-powered health trend analysis and predictions</span>
+                    </li>
+                    <li class="highlight-item">
+                      <i class="fas fa-check-circle highlight-icon"></i>
+                      <span>Integration with multiple wearable device brands</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="technologies-title">
+                    <i class="fas fa-code"></i> Technologies
+                  </h4>
+                  <div class="technologies-list">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">TensorFlow Lite</span>
+                    <span class="tech-badge">Bluetooth LE</span>
+                    <span class="tech-badge">GraphQL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <a href="./code-request.html" class="btn btn-outline hover-scale">
+                  <i class="fab fa-github btn-icon"></i> Code
+                </a>
+                <a href="./demo-request.html" class="btn btn-primary hover-scale">
+                  <i class="fas fa-external-link-alt btn-icon"></i> Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Call to Action -->
+  <section class="cta" style="text-align: center; padding: 5rem 0; background-color: var(--uiuc-blue-light);">
+    <div class="container">
+      <h2 class="gradient-heading fade-in">Interested in Working Together?</h2>
+      <div class="section-divider fade-in delay-100" style="margin: 1rem auto 2rem;"></div>
+      <p class="fade-in delay-200" style="max-width: 600px; margin: 0 auto 2rem;">
+        I'm always open to discussing new projects, creative ideas, and opportunities to be part of your vision.
+      </p>
+      <a href="./contact.html" class="btn btn-primary btn-lg fade-in delay-300">
+        <i class="fas fa-envelope btn-icon"></i> Get in Touch
+      </a>
+    </div>
+  </section>
+  
+  <!-- Partners & Companies Section -->
+  <section class="partners-section">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="gradient-heading text-center">Companies I've Worked With</h2>
+        <div class="section-divider" style="margin: 1.5rem auto;"></div>
+        <p class="text-center" style="max-width: 750px; margin: 0 auto;">
+          I've had the privilege of collaborating with these innovative companies on various projects, delivering tailored solutions that drive growth and efficiency.
+        </p>
+      </div>
+      
+      <div class="partners-grid">
+        <!-- Zimbabwe Companies -->
+        <a href="#" class="partner-logo fade-in delay-200">
+          <img src="../assets/companies/zimworx.svg" alt="ZimWorx" title="ZimWorx">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-300">
+          <img src="../assets/companies/simbisa.svg" alt="Simbisa Brands" title="Simbisa Brands">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-400">
+          <img src="../assets/companies/econet.svg" alt="Econet" title="Econet">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-500">
+          <img src="../assets/companies/telone.svg" alt="TelOne" title="TelOne">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-600">
+          <img src="../assets/companies/vanboer.svg" alt="Vanboer" title="Vanboer">
+        </a>
+        
+        <!-- South African Companies -->
+        <a href="#" class="partner-logo fade-in delay-300">
+          <img src="../assets/companies/mtn.svg" alt="MTN" title="MTN">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-400">
+          <img src="../assets/companies/standard-bank.svg" alt="Standard Bank" title="Standard Bank">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-500">
+          <img src="../assets/companies/vodacom.svg" alt="Vodacom" title="Vodacom">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-600">
+          <img src="../assets/companies/multichoice.svg" alt="MultiChoice" title="MultiChoice">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-700">
+          <img src="../assets/companies/nashua.svg" alt="Nashua" title="Nashua">
+        </a>
+        <a href="#" class="partner-logo fade-in delay-800">
+          <img src="../assets/companies/paragon.svg" alt="Paragon Express" title="Paragon Express">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Kudakwashe Taderera</div>
+          <p class="footer-description">
+            A passionate technology professional with expertise in software development, project management, and systems integration.
+          </p>
+          <div class="footer-social">
+            <a href="https://linkedin.com/in/kudakwashe-taderera" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kudakwashe-taderera" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/kudash_twakkie" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="../">Home</a></li>
+            <li class="footer-link"><a href="./about.html">About</a></li>
+            <li class="footer-link"><a href="./projects.html">Projects</a></li>
+            <li class="footer-link"><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li class="footer-link">
+              <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+              <a href="mailto:kt46@illinois.edu">kt46@illinois.edu</a>
+            </li>
+            <li class="footer-link">
+              <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+              University of Illinois Urbana-Champaign
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2025</span> Kudakwashe Taderera. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="../js/main.js"></script>
+  <script>
+    // Update current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

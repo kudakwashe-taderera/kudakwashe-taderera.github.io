@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kudakwashe Taderera's professional resume - Technology professional with expertise in software development">
+  <meta name="keywords" content="Kudakwashe Taderera, resume, CV, software developer, project manager">
+  <meta name="author" content="Kudakwashe Taderera">
+  
+  <title>Resume | Kudakwashe Taderera</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/pages/resume.html">
+  <meta property="og:title" content="Resume | Kudakwashe Taderera">
+  <meta property="og:description" content="Kudakwashe Taderera's professional resume - Technology professional with expertise in software development">
+  <meta property="og:image" content="/assets/meta-image.jpg">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://yourwebsite.com/pages/resume.html">
+  <meta property="twitter:title" content="Resume | Kudakwashe Taderera">
+  <meta property="twitter:description" content="Kudakwashe Taderera's professional resume - Technology professional with expertise in software development">
+  <meta property="twitter:image" content="/assets/meta-image.jpg">
+
+  <style>
+    /* Resume-specific styles */
+    .resume-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 3rem;
+      margin-bottom: 2rem;
+    }
+    .resume-header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--uiuc-orange);
+    }
+    .resume-section {
+      margin-bottom: 2.5rem;
+    }
+    .resume-section-title {
+      color: var(--uiuc-blue);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .resume-section-title i {
+      margin-right: 0.75rem;
+      color: var(--uiuc-orange);
+    }
+    .resume-item {
+      margin-bottom: 1.75rem;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--uiuc-blue-light);
+      position: relative;
+    }
+    .resume-item:last-child {
+      margin-bottom: 0;
+    }
+    .resume-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -8px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: var(--uiuc-orange);
+    }
+    .resume-item-title {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--uiuc-blue);
+    }
+    .resume-item-subtitle {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-color);
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .resume-item-period {
+      color: var(--uiuc-orange);
+      font-weight: 500;
+    }
+    .resume-item-description {
+      margin-top: 0.75rem;
+      font-size: 0.95rem;
+      color: var(--text-color-light);
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    .skill-tag {
+      background-color: var(--uiuc-blue-light);
+      color: var(--uiuc-blue);
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .download-resume {
+      position: sticky;
+      top: 1.5rem;
+      z-index: 10;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .resume-container {
+        padding: 1.5rem;
+      }
+      .resume-item-subtitle {
+        flex-direction: column;
+      }
+      .resume-item-period {
+        margin-top: 0.25rem;
+      }
+    }
+    
+    /* Print styles for better PDF generation */
+    @media print {
+      body {
+        background-color: white;
+      }
+      .navbar, .footer, .download-resume, .theme-toggle {
+        display: none;
+      }
+      .resume-container {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+      }
+      .resume-section {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="/" class="navbar-logo">Kudakwashe <span>Taderera</span></a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <ul class="navbar-nav">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/pages/about.html" class="nav-link">About</a></li>
+        <li><a href="/pages/projects.html" class="nav-link">Projects</a></li>
+        <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/pages/resume.html" class="nav-link active">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Header -->
+  <section class="resume-header-section" style="background-color: var(--uiuc-blue-light); padding: 5rem 0 3rem;">
+    <div class="container">
+      <div class="fade-in">
+        <h1 class="gradient-heading text-center">My Resume</h1>
+        <div class="section-divider" style="margin: 1.5rem auto;"></div>
+        <p class="text-center accent-border-left" style="max-width: 750px; margin: 0 auto; padding-left: 1rem; border-left: 4px solid var(--uiuc-orange);">
+          Technology professional with expertise in software development, project management, and systems integration. Currently pursuing a Master of Science in Technology Management at University of Illinois Urbana-Champaign.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Resume Section -->
+  <section class="resume-section-wrapper" style="padding: 3rem 0 5rem; background-color: white;">
+    <div class="container">
+      <div class="download-resume fade-in">
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary hover-scale" id="download-resume-pdf">
+            <i class="fas fa-download btn-icon"></i> Download PDF
+          </button>
+          <button class="btn btn-outline hover-scale" id="download-resume-docx">
+            <i class="fas fa-file-word btn-icon"></i> Download DOCX
+          </button>
+        </div>
+      </div>
+      
+      <div class="resume-container fade-in delay-200">
+        <div class="resume-header">
+          <h2 style="color: var(--uiuc-blue); font-size: 2.2rem; margin-bottom: 0.5rem;">Kudakwashe Taderera</h2>
+          <p style="color: var(--text-color-light); font-size: 1.2rem; margin-bottom: 1.5rem;">Technology Management Student</p>
+          
+          <div style="display: flex; flex-wrap: wrap; gap: 1rem; color: var(--text-color-light);">
+            <div style="display: flex; align-items: center;">
+              <i class="fas fa-envelope" style="color: var(--uiuc-orange); margin-right: 0.5rem;"></i>
+              <a href="mailto:kt46@illinois.edu" style="color: inherit; text-decoration: none;">kt46@illinois.edu</a>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <i class="fas fa-phone" style="color: var(--uiuc-orange); margin-right: 0.5rem;"></i>
+              <span>+1 (447) 902-5849</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <i class="fas fa-map-marker-alt" style="color: var(--uiuc-orange); margin-right: 0.5rem;"></i>
+              <span>University of Illinois Urbana-Champaign</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+              <i class="fab fa-linkedin-in" style="color: var(--uiuc-orange); margin-right: 0.5rem;"></i>
+              <a href="https://linkedin.com/in/kudakwashe-taderera" style="color: inherit; text-decoration: none;" target="_blank" rel="noopener noreferrer">linkedin.com/in/kudakwashe-taderera</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Education Section -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">
+            <i class="fas fa-graduation-cap"></i> Education
+          </h3>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">Master of Science in Technology Management</h4>
+            <div class="resume-item-subtitle">
+              <span>University of Illinois, Urbana-Champaign</span>
+              <span class="resume-item-period">Aug 2024 - Jul 2025 (Expected)</span>
+            </div>
+            <p class="resume-item-description">
+              GPA – 4.00/4.00
+            </p>
+            <p class="resume-item-description">
+              <strong>Relevant Courses:</strong> Big Data Infrastructures, Enterprise Database Management, Information Systems Development, Topics in Business Intelligence, Analytics for Management Decision Making
+            </p>
+          </div>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">Bachelor of Science in Management Information Systems</h4>
+            <div class="resume-item-subtitle">
+              <span>Midlands State University, Harare-Zimbabwe</span>
+              <span class="resume-item-period">Jan 2018 - Nov 2021</span>
+            </div>
+            <p class="resume-item-description">
+              CGPA – 3.99/4.00 (1st Class)
+            </p>
+          </div>
+        </div>
+        
+        <!-- Experience Section -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">
+            <i class="fas fa-briefcase"></i> Professional Experience
+          </h3>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">IT Security & System Analyst</h4>
+            <div class="resume-item-subtitle">
+              <span>Paragon Express</span>
+              <span class="resume-item-period">Mar 2024 - Jul 2024</span>
+            </div>
+            <ul style="margin-top: 0.75rem; padding-left: 1rem; color: var(--text-color-light);">
+              <li>Developed and deployed automated network security protocols, reducing potential cyber threats by 30%.</li>
+              <li>Designed and maintained SQL-based database solutions, improving data retrieval efficiency.</li>
+              <li>Conducted system audits and optimized IT infrastructure, resulting in a 40% reduction in downtime.</li>
+              <li>Provided technical support to 200+ users, enhancing operational efficiency.</li>
+            </ul>
+          </div>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">ICT Support & Automation Specialist</h4>
+            <div class="resume-item-subtitle">
+              <span>Nashua Zimbabwe</span>
+              <span class="resume-item-period">Oct 2022 - Mar 2024</span>
+            </div>
+            <ul style="margin-top: 0.75rem; padding-left: 1rem; color: var(--text-color-light);">
+              <li>Led the implementation of data security measures, enhancing compliance and reducing breaches.</li>
+              <li>Maintained and upgraded network infrastructure, increasing system efficiency by 23%.</li>
+              <li>Diagnosed and resolved technical and software-related issues, reducing downtime by 20%.</li>
+              <li>Developed custom scripts to automate IT tasks, reducing manual workload by 30%.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Academic Project Experience -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">
+            <i class="fas fa-laptop-code"></i> Academic Project Experience
+          </h3>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">ZIMSEC Career Guidance System</h4>
+            <div class="resume-item-subtitle">
+              <span>Midlands State University</span>
+              <span class="resume-item-period">Jul 2021 - Nov 2021</span>
+            </div>
+            <ul style="margin-top: 0.75rem; padding-left: 1rem; color: var(--text-color-light);">
+              <li>Designed and implemented a machine learning-based recommendation system for career guidance.</li>
+              <li>Applied content-based and collaborative filtering to improve career suggestions by 20%.</li>
+              <li>Developed a predictive model to analyze user behavior, enhancing recommendation accuracy.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Skills Section -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">
+            <i class="fas fa-code"></i> Skills
+          </h3>
+          
+          <div>
+            <h4 style="margin-bottom: 0.75rem; color: var(--uiuc-blue);">Programming Languages</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">C</span>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1.5rem;">
+            <h4 style="margin-bottom: 0.75rem; color: var(--uiuc-blue);">Data Analytics & Visualization</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">NumPy</span>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1.5rem;">
+            <h4 style="margin-bottom: 0.75rem; color: var(--uiuc-blue);">Database Management</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">MongoDB</span>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1.5rem;">
+            <h4 style="margin-bottom: 0.75rem; color: var(--uiuc-blue);">Cloud & Security</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">AWS (EC2, S3, RDS)</span>
+              <span class="skill-tag">Cybersecurity Basics</span>
+              <span class="skill-tag">Network Security</span>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1.5rem;">
+            <h4 style="margin-bottom: 0.75rem; color: var(--uiuc-blue);">Machine Learning & AI</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Preprocessing</span>
+              <span class="skill-tag">Model Training</span>
+              <span class="skill-tag">Predictive Analytics</span>
+            </div>
+          </div>
+          
+          <div style="margin-top: 1.5rem;">
+            <h4 style="margin-bottom: 0.75rem; color: var(--uiuc-blue);">Tools & Technologies</h4>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Extracurricular Activities -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">
+            <i class="fas fa-users"></i> Extracurricular Activities
+          </h3>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">President – Students Representative Council</h4>
+            <div class="resume-item-subtitle">
+              <span>Midlands State University</span>
+              <span class="resume-item-period">Jan 2021 - Nov 2021</span>
+            </div>
+            <ul style="margin-top: 0.75rem; padding-left: 1rem; color: var(--text-color-light);">
+              <li>Spearheaded the digital transformation of student services, implementing an online student portal.</li>
+              <li>Led cross-functional teams, improving student engagement by 25%.</li>
+              <li>Managed budgets and organized campus-wide initiatives impacting 5,000+ students.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Certifications -->
+        <div class="resume-section">
+          <h3 class="resume-section-title">
+            <i class="fas fa-certificate"></i> Certifications & Additional Training
+          </h3>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">AWS Certified Cloud Practitioner</h4>
+            <div class="resume-item-subtitle">
+              <span>Amazon Web Services</span>
+              <span class="resume-item-period">In Progress</span>
+            </div>
+          </div>
+          
+          <div class="resume-item">
+            <h4 class="resume-item-title">ISC2 Certified Cybersecurity</h4>
+            <div class="resume-item-subtitle">
+              <span>ISC²</span>
+              <span class="resume-item-period">In Progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Kudakwashe Taderera</div>
+          <p class="footer-description">
+            A passionate technology professional with expertise in software development, project management, and systems integration.
+          </p>
+          <div class="footer-social">
+            <a href="https://linkedin.com/in/kudakwashe-taderera" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kudakwashe-taderera" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://twitter.com/kudash_twakkie" class="social-link" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="/">Home</a></li>
+            <li class="footer-link"><a href="/pages/about.html">About</a></li>
+            <li class="footer-link"><a href="/pages/projects.html">Projects</a></li>
+            <li class="footer-link"><a href="/pages/contact.html">Contact</a></li>
+            <li class="footer-link"><a href="/pages/resume.html">Resume</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li class="footer-link">
+              <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>
+              <a href="mailto:kt46@illinois.edu">kt46@illinois.edu</a>
+            </li>
+            <li class="footer-link">
+              <i class="fas fa-map-marker-alt" style="margin-right: 0.5rem;"></i>
+              University of Illinois Urbana-Champaign
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2025</span> Kudakwashe Taderera. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="/js/main.js"></script>
+  <script>
+    // Update current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // PDF download functionality
+    document.getElementById('download-resume-pdf').addEventListener('click', function() {
+      const link = document.createElement('a');
+      link.href = '/assets/documents/KudakwasheTaderera_Resume.pdf';
+      link.download = 'KudakwasheTaderera_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+    
+    // DOCX download functionality
+    document.getElementById('download-resume-docx').addEventListener('click', function() {
+      const link = document.createElement('a');
+      link.href = '/assets/documents/Kudakwashe%20Resume.docx';
+      link.download = 'Kudakwashe Resume.docx';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html>

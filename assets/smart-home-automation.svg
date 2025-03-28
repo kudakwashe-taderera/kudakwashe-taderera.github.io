@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="300" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="300" fill="#13294B" rx="15" />
+  
+  <!-- House Outline -->
+  <path d="M250 50 L100 150 L100 250 L400 250 L400 150 Z" stroke="white" stroke-width="4" fill="none" />
+  <rect x="220" y="200" width="60" height="50" stroke="white" stroke-width="2" fill="none" />
+  
+  <!-- Roof -->
+  <path d="M250 50 L100 150 L400 150 Z" fill="#13294B" stroke="white" stroke-width="4" />
+  
+  <!-- Windows -->
+  <rect x="150" y="175" width="40" height="40" stroke="#E84A27" stroke-width="2" fill="#3A75C4" rx="5" />
+  <rect x="310" y="175" width="40" height="40" stroke="#E84A27" stroke-width="2" fill="#3A75C4" rx="5" />
+  <line x1="150" y1="195" x2="190" y2="195" stroke="#E84A27" stroke-width="2" />
+  <line x1="170" y1="175" x2="170" y2="215" stroke="#E84A27" stroke-width="2" />
+  <line x1="310" y1="195" x2="350" y2="195" stroke="#E84A27" stroke-width="2" />
+  <line x1="330" y1="175" x2="330" y2="215" stroke="#E84A27" stroke-width="2" />
+  
+  <!-- Smart Home Elements -->
+  <!-- Wifi Signal -->
+  <path d="M250 100 Q300 80, 350 100" stroke="#E84A27" stroke-width="3" fill="none" />
+  <path d="M250 110 Q300 90, 350 110" stroke="#E84A27" stroke-width="3" fill="none" />
+  <path d="M250 120 Q300 100, 350 120" stroke="#E84A27" stroke-width="3" fill="none" />
+  
+  <!-- Smart Thermostat -->
+  <circle cx="250" cy="150" r="15" fill="#E84A27" />
+  <circle cx="250" cy="150" r="10" fill="white" />
+  <text x="250" y="154" font-family="Arial, sans-serif" font-size="12" fill="#13294B" text-anchor="middle">72°</text>
+  
+  <!-- Smart Light -->
+  <circle cx="250" cy="90" r="12" fill="yellow" />
+  <path d="M240 80 L260 100 M240 100 L260 80" stroke="#13294B" stroke-width="2" />
+  
+  <!-- Text -->
+  <text x="250" y="285" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+    Smart Home Automation
+  </text>
+</svg>
